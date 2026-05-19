@@ -53,6 +53,37 @@
     h3 { font-size: 1rem; margin-top: 1.25rem; color: #ddd; }
     p, li { color: var(--text); }
     a { color: #ce93d8; }
+    .contact {
+      background: var(--card);
+      border: 1px solid #2a2a35;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .contact h2 { margin-top: 0; }
+    .contact p { margin: 0.5rem 0 1.25rem; color: var(--muted); font-size: 0.95rem; }
+    .contact-email {
+      display: inline-block;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      margin-bottom: 1rem;
+      word-break: break-all;
+    }
+    .contact-email:hover { color: #ce93d8; }
+    .btn-contact {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--purple);
+      color: #fff !important;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+    .btn-contact:hover { background: #7b1fa2; transform: translateY(-1px); }
     footer {
       margin-top: 2.5rem;
       padding-top: 1.5rem;
@@ -84,7 +115,6 @@
 
     <h2>1. Who we are</h2>
     <p>This Privacy Policy applies to the mobile application <strong>CamGPS</strong>, published by <strong>CATMAN STUDIO</strong> (“we”, “us”, “our”).</p>
-    <p>Contact: <a href="mailto:privacy@catmanstudio.com">privacy@catmanstudio.com</a> (replace with your real support email if different).</p>
 
     <h2>2. Summary</h2>
     <p>CamGPS is a camera app that can stamp GPS and notes on photos you take. The optional <strong>photo map</strong> shows where your CamGPS photos were taken, using location data stored <em>inside those photos</em> on your device.</p>
@@ -141,8 +171,20 @@
     <h2>10. Your rights</h2>
     <p>Because we do not hold your personal data on our systems, there is nothing for us to access, correct, or delete on a server. You control all app data on your device.</p>
 
+    <section class="contact" id="contact" aria-label="Contact support">
+      <h2>Contact &amp; support</h2>
+      <p>Questions about this policy or CamGPS? Reach CATMAN STUDIO directly.</p>
+      <a class="contact-email" href="mailto:davidcatman2103@gmail.com">davidcatman2103@gmail.com</a>
+      <br />
+      <a
+        class="btn-contact"
+        href="mailto:davidcatman2103@gmail.com?subject=CamGPS%20Support&amp;body=Hello%20CATMAN%20STUDIO%2C%0A%0A"
+      >Email support</a>
+    </section>
+
     <footer>
       <p><strong>CATMAN STUDIO</strong> · CamGPS Privacy Policy</p>
+      <p>Support: <a href="mailto:davidcatman2103@gmail.com">davidcatman2103@gmail.com</a></p>
       <p>© 2026 CATMAN STUDIO. All rights reserved.</p>
     </footer>
   </div>
